@@ -1,0 +1,121 @@
+
+@import url('variables.css');
+
+body {
+    font-family: var(--font-family, Arial, sans-serif); 
+    font-size: var(--body-font-size, 16px); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color, black); 
+    color: white;
+    text-align: center;
+    padding: var(--header-padding, 20px) 0; 
+}
+
+h1 {
+    margin: 0;
+    font-size: var(--header-font-size, 2em); 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--spacing, 20px); 
+}
+
+nav.sidebar {
+    background-color: var(--secondary-color, #f4f4f4);
+    width: var(--sidebar-width, 200px);
+    padding: var(--spacing, 20px); 
+    border-radius: var(--border-radius, 8px);
+}
+
+nav.sidebar h2 {
+    margin-top: 0;
+}
+
+nav.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav.sidebar ul li {
+    margin: var(--spacing, 20px) 0;
+}
+
+nav.sidebar ul li a {
+    text-decoration: none;
+    color: var(--text-color, #333);
+    font-weight: bold;
+}
+
+nav.sidebar ul li a:hover {
+    color: var(--primary-color, black);
+}
+
+main {
+    flex: 1;
+    margin-left: var(--spacing, 20px); 
+}
+
+section {
+    margin-bottom: var(--spacing, 20px);
+}
+
+section h2 {
+    color: var(--primary-color, black); 
+    font-size: 1.5em;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary-color, black);
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius, 8px);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--footer-background-color, #333);
+    color: white;
+    padding: var(--footer-padding, 10px);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

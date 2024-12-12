@@ -1,0 +1,26 @@
+
+:root {
+    --primary-color: #FFD700; 
+    --secondary-color: #f4f4f4; 
+    --text-color: #333; 
+    --background-color: #ffffff; 
+    --footer-background-color: #333; 
+    --font-family: Arial, sans-serif;
+    --header-font-size: 2em;
+    --body-font-size: 16px;
+    --header-padding: 20px;
+    --spacing: 20px; 
+    --sidebar-width: 200px;
+    --border-radius: 8px;
+    --footer-padding: 10px;
+}
+
+
+body.dark-mode {
+    --primary-color: #333; 
+    --secondary-color: #222; 
+    --text-color: #fff; 
+    --background-color: #121212; 
+    --footer-background-color: #1a1a1a; 
+
+}

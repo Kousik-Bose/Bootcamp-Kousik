@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with CSS Units - Notes WEEK 1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 0 20px;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+      header {
+        background-color:white;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      section {
+        padding: 20px;
+        margin: 20px 0;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h1, h2 {
+        text-align: center;
+        color: #0056b3;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      li {
+        margin: 10px 0;
+        line-height: 1.6;
+      }
+      blockquote {
+        font-style: italic;
+        border-left: 4px solid #ccc;
+        padding-left: 15px;
+        color: #555;
+      }
+      code {
+        background-color: #eaeaea;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 1em;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Understanding CSS Units and Creating Responsive Layouts</h1>
+    </header>
+
+    <section>
+        <h1>Learnings</h1>
+      <h2>Level 1</h2>
+      <ul>
+        <li><code>height: 100vh;</code> ensures the body takes up the full height of the viewport, adjusting dynamically with screen size.</li>
+        <li><code>display: flex;</code> is used to enable Flexbox, which makes it easier to center elements.</li>
+        <li><code>justify-content: center;</code> aligns the content horizontally in the center of the viewport.</li>
+        <li><code>align-items: center;</code> vertically centers the content within the body.</li>
+        <li>Using percentages for widths allows elements to scale depending on the available space.</li>
+       
+      </ul>
+    </section>
+
+    <section>
+      <h2>Level 2</h2>
+      <ul>
+        <li><code>clamp()</code> allows dynamic scaling of properties like font size, adjusting based on viewport width.</li>
+        <li>The <code>min</code> and <code>max</code> functions help define a range for properties, ensuring they don't grow or shrink beyond a specified limit.</li>
+        <li>Viewport-based units like <code>vw</code> are used to scale text sizes relative to the screen width, providing better adaptability.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Level 3</h2>
+      <ul>
+        <li>CSS Grid is a powerful tool to create responsive, flexible layouts that adjust automatically to different screen sizes.</li>
+        <li>Using <code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code> allows columns to fit based on the available screen width, adapting to both small and large screens.</li>
+        <li>Media queries provide an additional layer of responsiveness, allowing for styles to be applied based on specific screen dimensions.</li>
+        <li>Fluid typography can be achieved using <code>em</code> and <code>clamp()</code>, which scale text according to the parent element or viewport size, ensuring readability on all devices.</li>
+      </ul>
+    </section>
+    <section>
+        <h2>Challenges</h2>
+        <p>No hard challenges faced in this exercise</p>
+        
+     </section>
+
+    
+    </footer>
+  </body>
+</html>

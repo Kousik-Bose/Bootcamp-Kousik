@@ -1,0 +1,112 @@
+
+@import url('variables.css');
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--body-font-size); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color); 
+    color: white;
+    text-align: center;
+    padding: var(--header-padding) 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: var(--header-font-size); 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--spacing); 
+}
+
+nav.sidebar {
+    background-color: var(--secondary-color);
+    width: var(--sidebar-width);
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+}
+
+nav.sidebar h2 {
+    margin-top: 0;
+}
+
+nav.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav.sidebar ul li {
+    margin: var(--spacing) 0;
+}
+
+nav.sidebar ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+nav.sidebar ul li a:hover {
+    color: var(--primary-color);
+}
+
+main {
+    flex: 1;
+    margin-left: var(--spacing); 
+}
+
+section {
+    margin-bottom: var(--spacing); 
+}
+
+section h2 {
+    color: var(--primary-color); 
+    font-size: 1.5em; 
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--footer-background-color);
+    color: white;
+    padding: var(--footer-padding);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

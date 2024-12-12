@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout and Media Queries - Notes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 0 20px;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+      header {
+        background-color: white;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      section {
+        padding: 20px;
+        margin: 20px 0;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h1, h2 {
+        text-align: center;
+        color: #0056b3;
+        margin-bottom: 20px;
+      }
+      code {
+        background-color: #eaeaea;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Grid Layout & Media Queries - Responsive Design</h1>
+    </header>
+
+    <section>
+      <h2>Grid Layout</h2>
+      <p>Grid layout offers flexibility for creating responsive designs. The property <code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code> automatically adjusts the columns to fit the screen, ensuring they are at least 200px wide.</p>
+    </section>
+
+    <section>
+      <h2>Media Queries</h2>
+      <p>Media queries allow styling based on screen size. For smaller screens, use:</p>
+      <pre><code>@media (max-width: 600px) {
+  .container { grid-template-columns: 1fr; }
+}</code></pre>
+      <p>This adjusts the grid layout to a single column on mobile devices.</p>
+    </section>
+
+    <section>
+      <h2>Challenges</h2>
+      <ul>
+        <li>Grid items sometimes don't align as expected; using <code>grid-auto-rows</code> helped me here.</li>
+        <li>Testing on real devices is crucial to ensure proper display on all screens, so that was a challenging part for me.</li>
+        
+      </ul>
+    </section>
+
+    
+  </body>
+</html>

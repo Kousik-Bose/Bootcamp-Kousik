@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2: CSS Variables and Styling Insights WEEK 1 </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        main {
+            max-width: 800px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        ul ul {
+            margin-top: 5px;
+            padding-left: 20px;
+            list-style: disc;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exercise 2: CSS Variables and Styling Insights WEEK 1</h1>
+
+        <h2>Key Takeaways</h2>
+        <ul>
+            <li><strong>CSS Variables:</strong> 
+                <ul>
+                    <li>Introduced reusable variables for colors, fonts, and spacing in <code>variables.css</code>.</li>
+                    <li>Found CSS variables helpful for maintaining consistent designs and making global style updates easier.</li>
+                </ul>
+            </li>
+            <li><strong>Understanding Cascading:</strong>
+                <ul>
+                    <li>Explored the cascading nature of CSS and how specificity impacts style application.</li>
+                    
+                </ul>
+            </li>
+            <li><strong>Fallbacks for Variables:</strong>
+                <ul>
+                    <li>Used default fallback values for CSS variables using <code>var(--primary-color, black)</code> syntax.</li>
+                    <li>This ensures styles remain functional even when variables are undefined.</li>
+                </ul>
+            </li>
+            <li><strong>Styling Table Rows:</strong>
+                <ul>
+                   
+                    <li>Applied alternating row colors to improve readability and visual separation.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Challenges and Observations</h2>
+        <ul>
+            <li>Initially found it tricky to grasp how CSS variables inherit values across different scopes.</li>
+           
+        </ul>
+    </main>
+</body>
+</html>
