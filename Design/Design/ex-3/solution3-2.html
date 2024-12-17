@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Zen Garden: The Beauty of CSS Design</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Font Awesome -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Dave Shea">
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+	<meta name="robots" content="all">
+
+	<style>
+		/* FONTS */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f9f9f9;
+		}
+		h1, h2, h3 {
+			font-family: 'Times New Roman', Times, serif;
+		}
+		p, ol, li {
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		/* GRID LAYOUT FOR ICONS */
+		.icon-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+			justify-items: center;
+			align-items: center;
+			margin: 20px auto;
+			max-width: 600px;
+		}
+
+		/* ICON STYLING */
+		.icon {
+			font-size: 50px; 
+			color: hsl(210, 80%, 40%);
+			transition: transform 0.3s ease, color 0.3s ease;
+			cursor: pointer;
+		}
+
+		.icon:hover {
+			transform: scale(1.2);
+			color: hsl(35, 80%, 50%); 
+		}
+
+		/* SVG ICON STYLING */
+		.icon svg {
+			width: 50px;
+			height: 50px;
+			fill: hsl(210, 80%, 40%);
+			transition: transform 0.3s ease, fill 0.3s ease;
+			cursor: pointer;
+		}
+
+		.icon svg:hover {
+			transform: scale(1.2);
+			fill: hsl(35, 80%, 50%);
+		}
+
+		/* FOOTER */
+		footer {
+			text-align: center;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body id="css-zen-garden">
+<div class="page-wrapper">
+	<section class="intro" id="zen-intro">
+		<header role="banner">
+			<h1>CSS Zen Garden</h1>
+			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+		</header>
+
+		<div class="summary" id="zen-summary" role="article">
+			<p>This page is enhanced to showcase a grid of icons with hover effects.</p>
+		</div>
+	</section>
+
+	<!-- ICON GRID -->
+	<section class="icon-grid">
+		
+		<div class="icon">
+			<i class="fas fa-paint-brush" title="Design"></i>
+		</div>
+		<div class="icon">
+			<i class="fas fa-code" title="Code"></i>
+		</div>
+		<div class="icon">
+			<i class="fas fa-bolt" title="Speed"></i>
+		</div>
+
+		<!-- Inline SVG Icons -->
+		<div class="icon" title="Star">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path d="M12 2l2.39 7.36H22l-6 4.73L18.37 22 12 17.27 5.63 22l2.37-7.91L2 9.36h7.61L12 2z"/>
+			</svg>
+		</div>
+		<div class="icon" title="Heart">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+			</svg>
+		</div>
+		<div class="icon" title="Sun">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path d="M6.76 4.84l-1.8-1.79L4.95 2l1.8 1.79-1.79 1.79zm10.48 0l1.79-1.79L19.05 2l-1.79 1.79 1.8 1.79zM12 4V2h-1v2h1zm0 18v-2h-1v2h1zm6.24-3.16l1.8 1.79 1.41-1.41-1.79-1.8-1.79 1.79zM4.95 19.05l1.79 1.79 1.41-1.41-1.8-1.79-1.79 1.79zM12 8a4 4 0 100 8 4 4 0 000-8z"/>
+			</svg>
+		</div>
+	</section>
+
+	<footer>
+		<p>Hover over the icons to see effects!</p>
+		<p id="current-datetime"></p> <!-- Placeholder for the date and time -->
+	</footer>
+</div>
+
+<script>
+	
+	function updateDateTime() {
+		const dateTimeElement = document.getElementById('current-datetime');
+		const now = new Date();
+		dateTimeElement.textContent = `Current Date & Time: ${now.toLocaleString()}`;
+	}
+	updateDateTime();
+	setInterval(updateDateTime, 1000); 
+</script>
+</body>
+</html>

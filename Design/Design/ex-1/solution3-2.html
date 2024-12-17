@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CSS Zen Garden: Typographic Hierarchy</title>
+
+    <!-- Linking Custom Fonts -->
+    <style>
+        @font-face {
+            font-family: 'Geist';
+            src: url('fonts/Geist-Regular.woff2') format('woff2'),
+                 url('fonts/Geist-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Merriweather';
+            src: url('https://fonts.gstatic.com/s/merriweather/v30/u-4k0qyriQwlOrhSvowK_l52xwNZWMfK.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            src: url('https://fonts.gstatic.com/s/robotomono/v21/L0x8DF4xlVMF-BfR8bXMIjhKkj8lElGZQ6m9.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Geist', sans-serif;
+            font-weight: bold;
+        }
+
+        code {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .instructions {
+            background-color: #f9f9f9;
+            border-left: 4px solid #6C63FF;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .typographic-example {
+            font-size: 1.2rem;
+            color: #6C63FF;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <section class="intro" id="zen-intro">
+            <header role="banner">
+                <h1>CSS Zen Garden</h1>
+                <h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+            </header>
+
+            <div class="instructions">
+                <p><strong>Typographic Hierarchy:</strong></p>
+                <ul>
+                    <li><strong>Headers:</strong> Geist (Sans-serif)</li>
+                    <li><strong>Body Text:</strong> Merriweather (Serif)</li>
+                    <li><strong>Code Blocks:</strong> Roboto Mono (Monospace)</li>
+                </ul>
+            </div>
+
+            <p class="typographic-example">This paragraph demonstrates the use of the serif font Merriweather for body text, ensuring readability and elegance.</p>
+
+            <pre><code>// This is a code block using Roboto Mono
+function sayHello() {
+    console.log("Hello, World!");
+}</code></pre>
+
+            <div class="preamble" id="zen-preamble" role="article">
+                <h3>Understanding Hierarchy</h3>
+                <p>Using different font families for headings, body text, and code improves readability and emphasizes the structure of your content.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 CSS Zen Garden. Designed with a typographic hierarchy using Geist, Merriweather, and Roboto Mono fonts.</p>
+        </footer>
+    </div>
+</body>
+</html>

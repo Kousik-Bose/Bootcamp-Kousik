@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Homepage Layout with Visual Hierarchy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Font Awesome -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+       
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+            margin-bottom: 40px;
+        }
+
+       
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+       
+        .featured-articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .article h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .article p {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+       
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Welcome to Our Amazing Website</h1>
+            <p>Explore the latest trends, articles, and resources at your fingertips.</p>
+            <a href="#featured" class="btn">Discover Featured Articles</a>
+        </header>
+
+       
+        <section id="featured" class="grid-container">
+            <h2>Featured Articles</h2>
+            <div class="featured-articles">
+                <div class="article">
+                    <img src="https://picsum.photos/800/600?random=1" alt="Article Image 1">
+                    <h3>How to Build a Modern Website</h3>
+                    <p>Learn the essential tools and techniques needed to build a responsive and modern website.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+                <div class="article">
+                    <img src="https://picsum.photos/800/600?random=2" alt="Article Image 2">
+                    <h3>CSS Grid: The Ultimate Guide</h3>
+                    <p>Understand the power of CSS Grid to create dynamic, responsive layouts with ease.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+                <div class="article">
+                    <img src="https://picsum.photos/800/600?random=3" alt="Article Image 3">
+                    <h3>JavaScript for Beginners</h3>
+                    <p>Get started with JavaScript, one of the most popular programming languages for web development.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2024 Amazing Website | All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>

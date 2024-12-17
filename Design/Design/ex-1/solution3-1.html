@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CSS Zen Garden: Custom Font</title>
+
+    <!-- Linking Custom Geist Font -->
+    <style>
+        @font-face {
+            font-family: 'Geist';
+            src: url('Geist-v1.4.01/webfonts/Geist-Regular.woff2') format('woff2'),
+                 url('Geist-v1.4.01/webfonts/Geist-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Geist';
+            src: url('Geist-v1.4.01/webfonts/Geist-Bold.woff2') format('woff2'),
+                 url('Geist-v1.4.01/webfonts/Geist-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Geist', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Geist', sans-serif;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: 'Geist', sans-serif;
+        }
+
+        .instructions {
+            background-color: #f9f9f9;
+            border-left: 4px solid #6C63FF;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .custom-font-example {
+            font-size: 1.5rem;
+            color: #6C63FF;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <section class="intro" id="zen-intro">
+            <header role="banner">
+                <h1>CSS Zen Garden</h1>
+                <h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+            </header>
+
+            <div class="instructions">
+                <p><strong>Explore the Custom Font:</strong></p>
+                <ul>
+                    <li><strong>Geist Font:</strong> A clean and modern typeface used for body text and headings.</li>
+                    <li>This font is installed locally and loaded using the <code>@font-face</code> rule in CSS.</li>
+                </ul>
+            </div>
+
+            <p class="custom-font-example">This text uses the locally installed Geist font, demonstrating its application in web design.</p>
+
+            <div class="preamble" id="zen-preamble" role="article">
+                <h3>Locally Installed Fonts</h3>
+                <p> Scam2024</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 CSS Zen Garden. Designed with Geist font for a modern touch.</p>
+        </footer>
+    </div>
+</body>
+</html>

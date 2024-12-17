@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IITM CSE Faculty</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Styled title for the department */
+        .title {
+            text-align: center;
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            padding-top: 40px;
+            background: linear-gradient(135deg, #0072ff, #00b8d4);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Style for the image inside the title */
+        .title img {
+            width: 60px; /* Adjust the size of the image */
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0072ff;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        .faculty-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .faculty-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 25%;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .faculty-card img {
+            width: 80%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .faculty-card h3 {
+            color: #0072ff;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .faculty-card p {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .faculty-card .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0072ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .faculty-card .button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .faculty-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="title">
+            
+            <img src="https://www.cse.iitm.ac.in/images/cse-iitm.png" alt="Logo">
+            <div>
+                Department of Computer Science & Engineering<br>
+                Indian Institute of Technology Madras, Chennai, India.
+            </div>
+        </div>
+
+        <h1>Meet Our Faculty</h1>
+
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="https://www.cse.iitm.ac.in/images/SA.png" alt="Faculty Member">
+                <h3>Shweta Agrawal (Professor)</h3>
+                <p>Office : SSB 403 | Phone : 4384
+                    Email : shwetaag [at] cse [dot] iitm [dot] ac [dot] in
+                    Research Interests : Cryptography and Information theory</p>
+                <a href="#" class="button">View Profile</a>
+            </div>
+            <div class="faculty-card">
+                <img src="https://www.cse.iitm.ac.in/images/sutanu.jpg" alt="Faculty Member">
+                <h3>Sutanu Chakraborti (Professor)</h3>
+                <p>Office : SSB 307 | Phone : 4376
+                    Email : sutanuc [at] cse [dot] iitm [dot] ac [dot] in
+                    Research Interests : Information retrieval, Memory-based reasoning, Machine learning.</p>
+                <a href="#" class="button">View Profile</a>
+            </div>
+            <div class="faculty-card">
+                <img src="https://www.cse.iitm.ac.in/images/HGP.jpg" alt="Faculty Member">
+                <h3>Harish Guruprasad (Assistant Professor)</h3>
+                <p>Office : SSB 413 | Phone : 4385
+                    Email : hariguru [at] cse [dot] iitm [dot] ac [dot] in
+                    Research Interests : Machine Learning, Learning Theory and Optimisation.</p>
+                <a href="#" class="button">View Profile</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

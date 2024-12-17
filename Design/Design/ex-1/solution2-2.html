@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Zen Garden: The Beauty of CSS Design</title>
+	<link rel="stylesheet" media="screen" href="style.css?v=8may2013">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Dave Shea">
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+	<meta name="robots" content="all">
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Merriweather:wght@300;400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+	<style>
+		/* Applying Variable Fonts */
+		body {
+			font-family: 'Roboto', sans-serif;
+			font-variation-settings: 'wght' 400;
+		}
+		h1, h2, h3 {
+			font-family: 'Merriweather', serif;
+		}
+		code {
+			font-family: 'Source Code Pro', monospace;
+			font-variation-settings: 'wght' 700;
+		}
+
+		.variable-light {
+			font-variation-settings: 'wght' 300;
+		}
+		.variable-bold {
+			font-variation-settings: 'wght' 700;
+		}
+		.variable-heavy {
+			font-variation-settings: 'wght' 900;
+		}
+	</style>
+</head>
+
+<body id="css-zen-garden">
+<div class="page-wrapper">
+	<section class="intro" id="zen-intro">
+		<header role="banner">
+			<h1 class="variable-heavy">CSS Zen Garden</h1>
+			<h2 class="variable-bold">The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+		</header>
+
+		<div class="summary" id="zen-summary" role="article">
+			<p class="variable-light">This page demonstrates the use of variable fonts, where we dynamically adjust font weight using CSS properties.</p>
+			<p>Look for the following examples:</p>
+			<ol>
+				<li>The title ("CSS Zen Garden") uses <strong>heavy</strong> weight (900).</li>
+				<li>The subtitle ("The Beauty of CSS Design") uses <strong>bold</strong> weight (700).</li>
+				<li>General text (like this) uses <strong>regular</strong> weight (400).</li>
+				<li>This paragraph is styled with <span class="variable-light">light weight (300)</span>.</li>
+			</ol>
+			<p>Variable fonts allow smoother transitions between font weights, enabling precise control over text appearance without loading multiple font files.</p>
+		</div>
+	</section>
+
+	<footer>
+		<p id="current-datetime" class="variable-light"></p> <!-- Placeholder for the date and time -->
+		<p><code>Example code block</code> uses a <strong>bold</strong> font weight (700) with the <strong>Source Code Pro</strong> font.</p>
+	</footer>
+</div>
+
+<script>
+	// Display current date and time in the footer
+	function updateDateTime() {
+		const dateTimeElement = document.getElementById('current-datetime');
+		const now = new Date();
+		dateTimeElement.textContent = `Current Date & Time: ${now.toLocaleString()}`;
+	}
+	updateDateTime();
+	setInterval(updateDateTime, 1000); 
+</script>
+</body>
+</html>

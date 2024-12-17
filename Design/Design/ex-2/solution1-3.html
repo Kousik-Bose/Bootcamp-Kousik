@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three-Color Scheme Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1E3A8A; 
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1, h2, h3 {
+      color: #FB923C; 
+    }
+
+    a, .button-accent {
+      color: #10B981; 
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover, .button-accent:hover {
+      color: #065F46; 
+    }
+
+    .button-primary {
+      background-color: #FB923C; 
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .button-primary:hover {
+      background-color: #F97316;
+    }
+
+    .section {
+      padding: 40px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .section-blue {
+      background-color: #1E40AF; 
+    }
+
+    .section-orange {
+      background-color: #FB923C; 
+      color: #1E3A8A; 
+    }
+
+    .contrast-text {
+      color: #F97316;
+    }
+
+    footer {
+      background-color: #1E3A8A; 
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container mx-auto">
+    <header class="text-center py-10">
+      <h1>Welcome to My Page</h1>
+      <p class="text-lg">This is a version using a three-color scheme: Blue, Orange, and Green</p>
+    </header>
+
+    <section class="section section-blue">
+      <h2>Heading 2 Section</h2>
+      <p>This section uses a darker blue background with orange accents for clear contrast.</p>
+      <a href="#" class="button-accent">Go to Green Section</a>
+    </section>
+
+    <section class="section section-orange">
+      <h3>Heading 3 Section</h3>
+      <p>This section uses a bright orange background with blue text for a striking contrast.</p>
+      <a href="#" class="button-primary">Learn More</a>
+    </section>
+
+    <section class="section section-blue">
+      <h2>Accent Color Section</h2>
+      <p>This section highlights the green accent color in links and buttons.</p>
+      <a href="#" class="button-accent">Explore Green</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Three-Color Scheme Design</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Comparison</title>
+    <style>
+        /* Reset and global styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0072ff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .comparison {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .comparison div {
+            width: 48%;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .comparison div:hover {
+            transform: translateY(-10px);
+        }
+
+        h3 {
+            color: black;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .comparison ul li::before {
+            content: '✔️';
+            color: #0072ff;
+            margin-right: 8px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .comparison {
+                flex-direction: column;
+            }
+
+            .comparison div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Cool gradient background for headings */
+        .gradient-header {
+            background: linear-gradient(to left, #00c6ff, #0072ff);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .gradient-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        /* Subtle animation for headings */
+        h2, h3 {
+            transition: color 0.3s ease;
+        }
+
+        h2:hover, h3:hover {
+            color: #00c6ff;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            background-color: #0072ff;
+            padding: 20px;
+            color: white;
+            font-size: 1.1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Website Comparison: Flipkart vs Amazon and State of Telangana vs State of Michigan</h1>
+
+    <!-- Flipkart vs Amazon -->
+    <div class="section">
+        <div class="gradient-header">
+            <h3>Flipkart vs Amazon Mobile Phones Pages</h3>
+        </div>
+        <div class="comparison">
+            <div>
+                <h3>Flipkart Mobile Phones Page</h3>
+                <p><strong>Design and Information Structure:</strong></p>
+                <ul>
+                    <li>Horizontal menu for better navigation</li>
+                    <li>Grid-based product display with large images</li>
+                    <li>Advanced search filters for refined shopping</li>
+                    <li>Responsive design with React Native for mobile</li>
+                </ul>
+                <p><strong>Services:</strong></p>
+                <ul>
+                    <li>Easy navigation catering to tier 2 & 3 cities</li>
+                    <li>Mobile optimized for consistent experience</li>
+                    <li>Secure payment options and customer reviews</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Amazon Mobile Phones Page</h3>
+                <p><strong>Design and Information Structure:</strong></p>
+                <ul>
+                    <li>Vertical menu with clear categorization</li>
+                    <li>Detailed product information with multiple images</li>
+                    <li>Robust search and filter options</li>
+                    <li>Responsive design for various screen sizes</li>
+                </ul>
+                <p><strong>Services:</strong></p>
+                <ul>
+                    <li>Efficient product browsing and fast checkout</li>
+                    <li>Seamless mobile experience</li>
+                    <li>Detailed product reviews and ratings</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- State of Telangana vs State of Michigan -->
+    <div class="section">
+        <div class="gradient-header">
+            <h3>State of Telangana vs State of Michigan Websites</h3>
+        </div>
+        <div class="comparison">
+            <div>
+                <h3>State of Telangana</h3>
+                <p><strong>Design and Information Structure:</strong></p>
+                <ul>
+                    <li>Modern design with a clear menu structure</li>
+                    <li>Organized content into categories (Government, Services, News)</li>
+                    <li>Responsive and accessible across devices</li>
+                    <li>Prominent display of state news and updates</li>
+                </ul>
+                <p><strong>Services:</strong></p>
+                <ul>
+                    <li>Provides resources for residents and visitors</li>
+                    <li>Clear organization of government services</li>
+                    <li>Interactive forms for public services</li>
+                </ul>
+            </div>
+            <div>
+                <h3>State of Michigan</h3>
+                <p><strong>Design and Information Structure:</strong></p>
+                <ul>
+                    <li>Intuitive navigation for residents and visitors</li>
+                    <li>Structured content into sections (Government, Residents, Visitors)</li>
+                    <li>Responsive design for accessibility on all devices</li>
+                    <li>Focus on user-friendly design</li>
+                </ul>
+                <p><strong>Services:</strong></p>
+                <ul>
+                    <li>Dedicated resources for residents and businesses</li>
+                    <li>Access to important government services and news</li>
+                    <li>Integrated services such as tax payments, licensing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   
+
+</div>
+
+</body>
+</html>

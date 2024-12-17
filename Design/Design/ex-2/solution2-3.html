@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Color Swatch Page with HSL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A grid of color swatches generated using HSL values with variations in saturation and lightness.">
+	<style>
+		
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #F9FAFB; 
+			color: #333333; 
+		}
+
+		h1 {
+			text-align: center;
+			margin: 20px 0;
+			color: #333333;
+		}
+
+		
+		.swatch-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			gap: 10px;
+			padding: 20px;
+		}
+
+		.swatch {
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 5px;
+			color: #FFF;
+			font-size: 0.9rem;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+		footer {
+			text-align: center;
+			padding: 10px;
+			background-color: #1E3A8A;
+			color: white;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Color Swatch Page Using HSL</h1>
+		<p style="text-align:center;">Variations in Saturation and Lightness</p>
+	</header>
+
+	
+	<div class="swatch-grid" id="swatchGrid"></div>
+
+	
+
+	<script>
+		
+		function generateSwatches() {
+			const grid = document.getElementById('swatchGrid');
+			let hue = 210; 
+
+			for (let saturation = 30; saturation <= 100; saturation += 10) {
+				for (let lightness = 30; lightness <= 80; lightness += 10) {
+					const hslValue = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+
+					
+					const swatch = document.createElement('div');
+					swatch.className = 'swatch';
+					swatch.style.backgroundColor = hslValue;
+					swatch.textContent = `HSL(${hue}, ${saturation}%, ${lightness}%)`;
+
+					
+					grid.appendChild(swatch);
+				}
+			}
+		}
+
+		
+		generateSwatches();
+	</script>
+</body>
+</html>

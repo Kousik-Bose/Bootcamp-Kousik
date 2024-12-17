@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Typography Exploration</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap">
+
+    <style>
+        
+        :root {
+            --base-color: #3A86FF;
+            --light-color: rgba(58, 134, 255, 0.1);
+            --medium-color: rgba(58, 134, 255, 0.4);
+            --dark-color: rgba(58, 134, 255, 0.8);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1, h2 {
+            font-family: 'Merriweather', serif;
+            color: var(--base-color);
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        
+        .card {
+            background: #fff;
+            border: 1px solid var(--medium-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: var(--medium-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Monochromatic Card</h2>
+        <p>This card uses a monochromatic theme based on the base color. The background, border, and shadow are differentiated using alpha channels for subtle effects.</p>
+    </div>
+</body>
+</html>

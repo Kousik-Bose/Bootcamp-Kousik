@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CSS Zen Garden: Simple Webpage Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Font Awesome -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #222;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .main-content h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .main-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        /* IMAGE GALLERY */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-gallery img,
+        .image-gallery picture {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .image-gallery img:hover,
+        .image-gallery picture:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #222;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* BUTTON STYLES */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER SECTION -->
+        <header>
+            <h1>How to Create a Beautiful Webpage Layout</h1>
+            <p>Simple techniques to align your content properly with clean design.</p>
+        </header>
+
+        <!-- MAIN CONTENT AREA -->
+        <div class="main-content">
+           
+            <section>
+                <h2>Introduction</h2>
+                <p>In this article, we’ll go over how to create a simple webpage layout with proper margins, padding, and alignment of text and images. This is important to keep your webpage clean and readable, just like articles you see on Medium.com.</p>
+            </section>
+
+           
+            <section>
+                <h2>Building the Layout</h2>
+                <p>To create an effective layout, start by structuring your HTML content with the right tags. Use the appropriate sections, headers, and content blocks. Proper spacing is key to achieving a professional look.</p>
+                
+               
+                <div class="image-gallery">
+                    <picture>
+                        <source srcset="https://picsum.photos/800/600?random=1" media="(min-width: 1024px)">
+                        <source srcset="https://picsum.photos/600/400?random=1" media="(min-width: 768px)">
+                        <img src="https://picsum.photos/400/300?random=1" alt="Responsive Image" loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source srcset="https://picsum.photos/800/600?random=2" media="(min-width: 1024px)">
+                        <source srcset="https://picsum.photos/600/400?random=2" media="(min-width: 768px)">
+                        <img src="https://picsum.photos/400/300?random=2" alt="Responsive Image 2" loading="lazy">
+                    </picture>
+                </div>
+
+                <p>The key to a great layout is to balance your content with enough white space to make it easy to read. Keep the user engaged with optimized images and appropriate text alignment.</p>
+            </section>
+
+           
+            <section>
+                <h2>Next Steps</h2>
+                <p>Now that you’ve learned how to apply spacing, text alignment, and image responsiveness, you’re ready to start building your own webpages. Don't forget to optimize images for faster loading times!</p>
+                <a href="#" class="btn">Start Building Now</a>
+            </section>
+        </div>
+
+        <
+    </div>
+</body>
+</html>

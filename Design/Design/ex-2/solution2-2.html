@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Zen Garden: The Beauty of CSS Design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Dave Shea">
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+	<meta name="robots" content="all">
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+	<style>
+		/* Default to light theme */
+		:root {
+			--primary: #1E3A8A;  /* Deep Blue */
+			--secondary: #FB923C;  /* Bright Orange */
+			--background: #F9FAFB;  /* Light Background */
+			--text-color: #333333;  /* Dark Text */
+			--overlay-bg: rgba(255, 255, 255, 0.7); /* Light Overlay */
+			--overlay-text: #1E3A8A; /* Text on Overlay */
+		}
+
+		/* Light Theme */
+		[data-theme="light"] {
+			--primary: #1E3A8A;
+			--secondary: #FB923C;
+			--background: #F9FAFB;
+			--text-color: #333333;
+			--overlay-bg: rgba(255, 255, 255, 0.7);
+			--overlay-text: #1E3A8A;
+		}
+
+		/* Dark Theme */
+		[data-theme="dark"] {
+			--primary: #4B7BEC;  /* Lighter Blue for Dark Theme */
+			--secondary: #FB923C;  /* Bright Orange */
+			--background: #1F2937;  /* Dark Background */
+			--text-color: #E5E7EB;  /* Light Text */
+			--overlay-bg: rgba(0, 0, 0, 0.5); /* Dark Overlay */
+			--overlay-text: #FB923C; /* Text on Overlay */
+		}
+
+		body {
+			background-color: var(--background);
+			color: var(--text-color);
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1, h2, h3 {
+			color: var(--secondary);
+		}
+
+		a {
+			color: var(--primary);
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: var(--secondary);
+		}
+
+		footer {
+			background-color: var(--primary);
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+
+		button {
+			background-color: var(--secondary);
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #F97316; /* Darker Orange */
+		}
+
+		/* Image Container */
+		.image-container {
+			position: relative;
+			width: 100%;
+			max-width: 800px;
+			margin: 20px auto;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		.image-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.overlay-text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: var(--overlay-bg);
+			color: var(--overlay-text);
+			padding: 20px;
+			font-size: 1.5rem;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 5px;
+			width: 80%;
+			max-width: 600px;
+		}
+	</style>
+</head>
+
+<body id="css-zen-garden" data-theme="light">
+	<div class="page-wrapper">
+		<header>
+			<h1>Welcome to CSS Zen Garden</h1>
+			<p>Discover the beauty of CSS design</p>
+		</header>
+
+		<!-- Image Section with Overlay Text -->
+		<div class="image-container">
+			<img src="https://via.placeholder.com/800x400" alt="Beautiful Landscape">
+			<div class="overlay-text">Experience the Beauty of CSS</div>
+		</div>
+
+		<footer>
+			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">HTML</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">CSS</a>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a>
+			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a>
+			<a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a>
+			<p id="current-datetime"></p> <!-- Placeholder for the date and time -->
+			<button onclick="toggleTheme()">Toggle Theme</button>
+		</footer>
+	</div>
+
+	<script>
+		// Function to update date and time
+		function updateDateTime() {
+			const dateTimeElement = document.getElementById('current-datetime');
+			const now = new Date();
+			dateTimeElement.textContent = `Current Date & Time: ${now.toLocaleString()}`;
+		}
+		updateDateTime();
+		setInterval(updateDateTime, 1000);
+
+		// Function to toggle theme
+		function toggleTheme() {
+			const currentTheme = document.body.getAttribute('data-theme');
+			if (currentTheme === 'light') {
+				document.body.setAttribute('data-theme', 'dark');
+			} else {
+				document.body.setAttribute('data-theme', 'light');
+			}
+		}
+	</script>
+</body>
+</html>
